@@ -1,18 +1,20 @@
 import sys
-sys.path.append(r'C:\Users\Azize Dje\Documents\QGIS\Python_Files')
+sys.path.append(r'/Python_Files')
 import Map_Matching as MpMt
 import Get_And_Draw as GaD
 
-# trouver la traje depuis un fichier XML
+# find the plot from an XML file
 T  = GaD.Get_Traje_By_XmlFile()
-# trouver le graphe depuis un fichier Shapefile
+# find the graph from a Shapefile
 G  = GaD.Get_Graph_From_ShapeFile()
-# trouver la bon traje depuis un graphe G et une list T de la trajet
+# find the right path from a graph G and a list T of the path
 Tp = MpMt.ST_Matching(G, T)
-# dessiner le graphe
+# draw the graph
 #GaD.Draw_Graph(G)
-# dessiner la trajet
+# draw the path
 #GaD.Draw_Trajectory(T)
-# dessiner la bon trajet
+# draw the right path
 GaD.Draw_Trajectory(Tp)
+
+# To Do...
 #t=MpMt.Find_Trajectory(Tp,G)

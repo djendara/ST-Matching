@@ -1,4 +1,4 @@
 # ST-Matching
-ST-Matching implémentation en python 3 et QGIS 3 .
-# développé par:
-Abdelazize Djendara, Touati Wafaa .
+ST-Matching implementation in python 3 and QGIS 3.
+# developed by:
+Abdelazize Djendara, Touati Wafaâ.
